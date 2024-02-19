@@ -4,12 +4,12 @@
 class Rectangle {
 public:
 	Rectangle() = default;
-	Rectangle(double newA, double newB);
-	double ploshad();
+	Rectangle(int newA, int newB);
+	int ploshad();
 
 private:
-	double a = 5;
-	double b = 7;
+	int a = 5;
+	int b = 7;
 };
 
 #endif

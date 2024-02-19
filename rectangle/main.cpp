@@ -2,28 +2,31 @@
 
 const double PI{3.14159265358};
 
-class Circle {
+class Rectangle {
 public:
-	Circle(){
-		a = 5;
-		b = 7;
-	}
-	Circle(double newA, double newB) {
-		A = newA;
-		B = newB;
-	}
+	Rectangle() {
+		x = 2.5;
+		y = 7.1;
+	} // default
 
+	Rectangle(double newX, double newY) {
+		x = newX;
+		y = newY;
+	}
 
 	double ploshad() {
-	return a * b;
+		return x * y;
 	}
-
+	
 private:
-	double a = 5;
-	double b = 7;
+	double x = 5;
+	double y = 7 ;
 };
 
 int main() {
 	Rectangle rectangle1;
-	std::cout << rectangle1.ploshad();
+	std::cout << "Rectangle 1" << rectangle1.ploshad() << std::endl;
+
+	Rectangle rectangle2(5.3, 9.0);
+	std::cout << "Rectangle 2" << rectangle2.ploshad() << std::endl;
 }
