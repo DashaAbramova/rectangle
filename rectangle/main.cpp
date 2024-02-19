@@ -1,6 +1,6 @@
 #include<iostream>
 
-const double PI{3.14159265358};
+const double PI(3.14159265358);
 
 class Rectangle {
 public:

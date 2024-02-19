@@ -1,15 +1,22 @@
 #ifndef RECTANGLE_H
 #define RECTANGLE_H
 
+#include "constants.hpp"
+
 class Rectangle {
 public:
-	Rectangle() = default;
-	Rectangle(int newA, int newB);
-	int ploshad();
+	Rectangle() {
+		x = 2.5;
+		y = 7.1;
+	} // default
+
+	Rectangle(double newX, double newY);
+
+	double ploshad();
 
 private:
-	int a = 5;
-	int b = 7;
+	double x = 5;
+	double y = 7;
 };
 
 #endif
